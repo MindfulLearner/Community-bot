@@ -1,0 +1,26 @@
+{
+  "name": "community-bot",
+  "version": "0.1.0",
+  "description": "Il bot Discord della community Boolean",
+  "main": "index.js",
+  "repository": "git@github.com:boolean-it/Community-bot.git",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Boolean",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.22.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "eslint": "^9.34.0"
+  }
+}
