@@ -1,0 +1,98 @@
+# Community bot Boolean
+
+Segui questa guida se vuoi contribuire allo sviluppo del bot, verrai guidato passo passo nella creazione dell'ambiente di test.
+
+## Perché questo bot?
+
+L'obiettivo principale del progetto è quello di incoraggiare studenti ed ex studenti Boolean ad avvicinarsi al mondo dell'open source, imparare a lavorare in team in maniera strutturata e allenarsi scrivendo codice per qualcosa di concreto: un bot per la community sviluppato dalla community stessa.
+
+## Setup
+
+Vediamo come:
+
+- configurare il tuo computer
+- creare un account Discord developer
+- ottenere un token per lo sviluppo
+- creare un server Discord per testare il bot
+- invitare il bot locale nel tuo server di test
+
+## Configurazione del computer
+
+Se sei qui probabilmente il tuo computer è già configurato a dovere, nel dubbio controlla comunque i seguenti punti:
+
+1. Installa l'ultima versione LTS di [Node.js](https://nodejs.org/en/) (ti consigliamo di utilizzare [nvm](https://github.com/nvm-sh/nvm) o strumenti equivalenti per poter meglio gestire le versioni installate per i tuoi vari progetti)
+
+2. Clona questo repository
+
+3. Esegui `npm install`
+
+## Discord developer account (free)
+
+Come ottenere il tuo account Discord Developer:
+
+1. Registrati o fai il login (se sei già registrato) su [Discord Developer Portal](https://discord.com/developers/applications), puoi anche scannerizzare questo QR code per loggarti tramite mobile app
+
+2. Nella dashboard, clicca _New Application_ in alto a destra
+
+3. Scegli un nome (e.g. BooleanBot) e clicca _Create_
+
+4. Dovresti vedere una cosa simile, **non condividere mai con nessuno il client secret**
+
+5. Naviga nella sezione _Bot_ e clicca su _Add Bot_
+
+6. Dovresti vedere una cosa simile, **non condividere mai con nessuno il client secret**
+
+Per maggiori infornazioni ti rimandiamo alla [documentazione ufficiale Discord](https://discord.com/developers/docs/intro).
+
+## Come ottenere il token
+
+1. Accedi alla tua dashboard su [Discord Developer Portal](https://discord.com/developers/applications/)
+
+2. Seleziona l'applicazione che hai creato in precedenza
+
+3. Entra nella sezione _Bot_
+
+4. Clicca su _Copy_ sotto _TOKEN_
+
+5. Apri la cartella dove hai clonato il repository nel tuo editor (e.g. [Visual Studio Code](https://code.visualstudio.com/))
+
+6. Nella cartella principale, rinomina il file `.env-example` in `.env` e aprilo
+
+7. Incolla il tuo token al posto di `PASTE_HERE_YOUR_TOKEN`, attenzione a non lasciare spazi bianchi
+
+## Come ottenere il tuo user ID
+
+1. Apri Discord
+
+2. Clicca sull'icona ⚙️ in basso a sinistra
+
+3. Clicca su _Advance_ sotto _App settings_, e attiva il _Developer Mode_
+
+4. Entra in un qualsiasi server e cerca il tuo avatar nella colonna di destra, clicca col tasto destro e copia il tuo user ID
+
+6. Riapri il file `.env` nel tuo editor e incolla il tuo user ID al posto di `PASTE_HERE_YOUR_OWNER_ID`. Attenzione a non lasciare spazi bianchi
+
+## Creazione del server Discord di test
+
+1. Apri Dicord e clicca sull'icona `+` sotto la lista dei server a sinistra
+
+1. Scegli l'opzione _Create My Own_
+
+
+## Bot invitation
+
+Un bot è un utente come un altro e pertanto va invitato nel server per poterci interagire. Per farlo:
+
+1. vai sulla tua dashboard sul [Discord Developer Portal](https://discord.com/developers/applications/) e seleziona l'applicazione che hai creato
+
+2. entra nella sezione _OAuth2_e clicca su _Copy_ sotto a _CLIENT ID_
+
+3. vai su [Discord Permissions Calculator](https://discordapi.com/permissions.html#388208), i permessi sono già impostati
+
+4. incolla il _CLIENT ID_ nell'apposito campo e clicca sul link generato
+
+5. si aprirà una pagina con una tendina dalla quale sceglire a quale server vuoi invtare il bot, scegli il server di test che hai creato in precedenza e clicca _Authorize_. Nella lista degli utenti vedrai comparire ora il tuo bot (offline)
+
+## Mettere il bot online
+
+Da teminale entra nella cartella del progetto ed esegui `npm run dev`, se hai fatto tutto correttamente il tuo bot risulterà online ora. Congratulazioni!
