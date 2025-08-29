@@ -28,37 +28,19 @@ Se sei qui probabilmente il tuo computer è già configurato a dovere, nel dubbi
 
 ## Discord developer account (free)
 
-Come ottenere il tuo account Discord Developer:
+Come ottenere il tuo account Discord Developer e creare il bot di test:
 
-1. Registrati o fai il login (se sei già registrato) su [Discord Developer Portal](https://discord.com/developers/applications), puoi anche scannerizzare questo QR code per loggarti tramite mobile app
+1. Registrati o fai il login (se sei già registrato) su [Discord Developer Portal](https://discord.com/developers/applications)
 
 2. Nella dashboard, clicca _New Application_ in alto a destra
 
-3. Scegli un nome (e.g. BooleanBot) e clicca _Create_
+3. Scegli un nome (e.g. BooleanBot) e clicca _Create_, dovresti vedere una cosa simile ![discord dashboard](./img/contribute-bothome.png)
 
-4. Dovresti vedere una cosa simile, **non condividere mai con nessuno il client secret**
+4. Naviga nella sezione _Bot_ e clicca su _Add Bot_, dovresti vedere una cosa simile ![discord dashboard](./img/contribute-bottoken.png)
 
-5. Naviga nella sezione _Bot_ e clicca su _Add Bot_
+5. Clicca su _Reset Token_ e poi su _Copy_ **non condividere mai con nessuno il token**
 
-6. Dovresti vedere una cosa simile, **non condividere mai con nessuno il client secret**
-
-Per maggiori infornazioni ti rimandiamo alla [documentazione ufficiale Discord](https://discord.com/developers/docs/intro).
-
-## Come ottenere il token
-
-1. Accedi alla tua dashboard su [Discord Developer Portal](https://discord.com/developers/applications/)
-
-2. Seleziona l'applicazione che hai creato in precedenza
-
-3. Entra nella sezione _Bot_
-
-4. Clicca su _Copy_ sotto _TOKEN_
-
-5. Apri la cartella dove hai clonato il repository nel tuo editor (e.g. [Visual Studio Code](https://code.visualstudio.com/))
-
-6. Nella cartella principale, rinomina il file `.env-example` in `.env` e aprilo
-
-7. Incolla il tuo token al posto di `PASTE_HERE_YOUR_TOKEN`, attenzione a non lasciare spazi bianchi
+6. Nel tuo editor rinomima il file `.env.example` in `.env` e aprilo, incolla il tuo token al posto di `PASTE_HERE_YOUR_TOKEN`. Attenzione a non lasciare spazi bianchi
 
 ## Come ottenere il tuo user ID
 
@@ -70,7 +52,7 @@ Per maggiori infornazioni ti rimandiamo alla [documentazione ufficiale Discord](
 
 4. Entra in un qualsiasi server e cerca il tuo avatar nella colonna di destra, clicca col tasto destro e copia il tuo user ID
 
-6. Riapri il file `.env` nel tuo editor e incolla il tuo user ID al posto di `PASTE_HERE_YOUR_OWNER_ID`. Attenzione a non lasciare spazi bianchi
+5. Riapri il file `.env` nel tuo editor e incolla il tuo user ID al posto di `PASTE_HERE_YOUR_OWNER_ID`. Attenzione a non lasciare spazi bianchi
 
 ## Creazione del server Discord di test
 
@@ -78,20 +60,19 @@ Per maggiori infornazioni ti rimandiamo alla [documentazione ufficiale Discord](
 
 1. Scegli l'opzione _Create My Own_
 
-
 ## Bot invitation
 
 Un bot è un utente come un altro e pertanto va invitato nel server per poterci interagire. Per farlo:
 
-1. vai sulla tua dashboard sul [Discord Developer Portal](https://discord.com/developers/applications/) e seleziona l'applicazione che hai creato
+1. Vai sulla tua dashboard sul [Discord Developer Portal](https://discord.com/developers/applications/) e seleziona l'applicazione che hai creato
 
-2. entra nella sezione _OAuth2_e clicca su _Copy_ sotto a _CLIENT ID_
+2. Entra nella sezione _OAuth2_e clicca su _Copy_ sotto a _CLIENT ID_
 
-3. vai su [Discord Permissions Calculator](https://discordapi.com/permissions.html#388208), i permessi sono già impostati
+3. Vai su [Discord Permissions Calculator](https://discordapi.com/permissions.html#388208), i permessi sono già impostati
 
-4. incolla il _CLIENT ID_ nell'apposito campo e clicca sul link generato
+4. Incolla il _CLIENT ID_ nell'apposito campo e clicca sul link generato
 
-5. si aprirà una pagina con una tendina dalla quale sceglire a quale server vuoi invtare il bot, scegli il server di test che hai creato in precedenza e clicca _Authorize_. Nella lista degli utenti vedrai comparire ora il tuo bot (offline)
+5. Si aprirà una pagina con una tendina dalla quale sceglire a quale server vuoi invtare il bot, scegli il server di test che hai creato in precedenza e clicca _Authorize_. Nella lista degli utenti vedrai comparire ora il tuo bot (offline)
 
 ## Mettere il bot online
 
