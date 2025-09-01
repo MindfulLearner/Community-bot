@@ -26,7 +26,7 @@ Se sei qui probabilmente il tuo computer è già configurato a dovere, nel dubbi
 
 3. Esegui `npm install`
 
-## Discord developer account (free)
+## Creazione di un account Discord developer
 
 Come ottenere il tuo account Discord Developer e creare il bot di test:
 
@@ -48,7 +48,7 @@ Come ottenere il tuo account Discord Developer e creare il bot di test:
 
 1. Scegli l'opzione _Create My Own_ > _For me and my friends_
 
-## Bot invitation
+## Come invitare il bot nel tuo server di test
 
 Un bot è un utente come un altro e pertanto va invitato nel server per poterci interagire. Per farlo:
 
@@ -61,6 +61,10 @@ Un bot è un utente come un altro e pertanto va invitato nel server per poterci 
 4. Incolla il _CLIENT ID_ nell'apposito campo e clicca sul link generato
 
 5. Si aprirà una pagina con una tendina dalla quale sceglire a quale server vuoi invtare il bot, scegli il server di test che hai creato in precedenza e clicca _Authorize_. Nella lista degli utenti vedrai comparire ora il tuo bot (offline)
+
+6. Aggiungi il tuo client ID anche al file `.env` al posto di _PASTE_HERE_YOUR_CLIENT_ID_
+
+7. Sempre nel file `.env` incolla al posto di _PASTE_YOUR_SERVER_ID_ il server ID che puoi ottenere cliccando con il tasto destro sul nome del server in Discord. Se l'ID non compare nel menu contestuale, devi attivare la [modalità sviluppatore](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
 
 ## Mettere il bot online
 
