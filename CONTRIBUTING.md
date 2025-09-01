@@ -42,23 +42,11 @@ Come ottenere il tuo account Discord Developer e creare il bot di test:
 
 6. Nel tuo editor rinomima il file `.env.example` in `.env` e aprilo, incolla il tuo token al posto di `PASTE_HERE_YOUR_TOKEN`. Attenzione a non lasciare spazi bianchi
 
-## Come ottenere il tuo user ID
-
-1. Apri Discord
-
-2. Clicca sull'icona ⚙️ in basso a sinistra
-
-3. Clicca su _Advance_ sotto _App settings_, e attiva il _Developer Mode_
-
-4. Entra in un qualsiasi server e cerca il tuo avatar nella colonna di destra, clicca col tasto destro e copia il tuo user ID
-
-5. Riapri il file `.env` nel tuo editor e incolla il tuo user ID al posto di `PASTE_HERE_YOUR_OWNER_ID`. Attenzione a non lasciare spazi bianchi
-
 ## Creazione del server Discord di test
 
 1. Apri Dicord e clicca sull'icona `+` sotto la lista dei server a sinistra
 
-1. Scegli l'opzione _Create My Own_
+1. Scegli l'opzione _Create My Own_ > _For me and my friends_
 
 ## Bot invitation
 
