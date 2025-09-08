@@ -2,10 +2,6 @@
 
 Segui questa guida se vuoi contribuire allo sviluppo del bot, verrai guidato passo passo nella creazione dell'ambiente di test.
 
-## Perché questo bot?
-
-L'obiettivo principale del progetto è quello di incoraggiare studenti ed ex studenti Boolean ad avvicinarsi al mondo dell'open source, imparare a lavorare in team in maniera strutturata e allenarsi scrivendo codice per qualcosa di concreto: un bot per la community sviluppato dalla community stessa.
-
 ## Setup
 
 Vediamo come:
@@ -22,7 +18,7 @@ Se sei qui probabilmente il tuo computer è già configurato a dovere, nel dubbi
 
 1. Installa l'ultima versione LTS di [Node.js](https://nodejs.org/en/) (ti consigliamo di utilizzare [nvm](https://github.com/nvm-sh/nvm) o strumenti equivalenti per poter meglio gestire le versioni installate per i tuoi vari progetti)
 
-2. Clona questo repository
+2. Fai un fork di questo repository e clonalo in locale
 
 3. Esegui `npm install`
 
