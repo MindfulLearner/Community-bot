@@ -3,7 +3,7 @@ services:
     name: community-bot
     runtime: node
     buildCommand: npm install
-    startCommand: node index.js && node deploy-commands.js
+    startCommand: node index.js
     envVars:
       - key: DISCORD_TOKEN
         sync: false
