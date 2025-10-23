@@ -2,9 +2,9 @@ require('dotenv').config();
 const fs = require('node:fs');
 const path = require('node:path');
 // Require the necessary discord.js classes
-const { Client, Collection, Events, GatewayIntentBits, MessageFlags, REST } = require('discord.js');
-const { token } = process.env.DISCORD_TOKEN;
-const { clientId } = process.env.CLIENT_ID;
+const { Client, Collection, Events, GatewayIntentBits, MessageFlags, REST, Routes } = require('discord.js');
+const token = process.env.DISCORD_TOKEN;
+const clientId = process.env.CLIENT_ID;
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -57,9 +57,6 @@ client.on(Events.InteractionCreate, async interaction => {
 		}
 	}
 });
-
-// Log in to Discord with your client's token
-client.login(token);
 
 // Health check HTTP server per Render
 const http = require('node:http');
