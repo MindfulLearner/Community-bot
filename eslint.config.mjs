@@ -1,4 +1,5 @@
 import js from '@eslint/js';
+
 export default [
 	{ ignores: ['eslint.config.mjs'] },
 	js.configs.recommended,
